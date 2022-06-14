@@ -1,12 +1,14 @@
 import React from 'react'
-import Button from '../UI/Button/Button'
-import s from './Header.module.sass'
-import Social from '../UI/Social'
+import Button from '../UI/Button/Button';
+import s from './Header.module.sass';
+import SocialList from '../UI/SocialList/SocialList';
 import NavHeader from '../NavHeader/NavHeader';
-
+import { socialList } from './Header.utils';
 import logo from '../../sourse/logo.png';
 
-export default function Header() {
+
+const Header = ({ label }) => {
+
 	return (
 		<header className={s.header}>
 			<div className={s.wrap}>
@@ -16,13 +18,12 @@ export default function Header() {
 						<img src={logo} alt="logo" />
 					</a>
 					<div className={s.socialInner}>
-						<Social type="head">f</Social>
-						<Social type="head">t</Social>
-						<Social type="head">in</Social>
+						<SocialList namelist={socialList} colorVariant="light" />
 					</div>
 				</div>
 
 				<div className={s.right}>
+
 					<NavHeader />
 					<Button>Order Today</Button>
 				</div>
@@ -30,3 +31,4 @@ export default function Header() {
 		</header>
 	)
 }
+export default Header;
