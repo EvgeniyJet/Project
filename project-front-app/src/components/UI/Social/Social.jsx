@@ -1,10 +1,21 @@
 import React from 'react';
-import s from './Social.module.sass'
-const Social = ({ icon, type }) => {
+
+import s from './Social.module.sass';
+
+import { SocialData } from '../Social/Social.utils';
+
+
+const Social = () => {
+	const dataIcon
+
+
 	return (
-		<i className={s.social} type={type}>
-			{icon}
-		</i>
+
+		<a className={s.social_box} name={name}>
+
+		</a>
+
+
 	);
 }
 
