@@ -3,3 +3,28 @@
 	border: 2px solid #FFCA42
 	border-radius: 0px
 	padding: 18px 52px
+	font-family: 'Cardo'
+	font-weight: 400
+	font-size: 19px
+	line-height: 28px
+	letter-spacing: 0.57px
+	text-transform: capitalize
+	color: #1B3764
+	transition: background 0.5s, color 0.5s
+	cursor: pointer
+
+	&:hover
+		background: transparent
+		border: 2px solid #FFCA42
+		color: #FFF
+
+@media (max-width: 700px)
+	.button
+		padding: 12px 34px
+
+@media (max-width: 525px)
+	header
+		.button
+			display: none
+
+@media (max-width: 400px)

@@ -1,11 +1,16 @@
 
-import s from './App.sass';
-import Header from './components/Header/Header';
+import BestBook from './components/BestBook';
+import Header from './components/Header';
+import Section from './components/Section';
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
+			<Section>
+				<BestBook />
+			</Section>
+
 		</div>
 	);
 }

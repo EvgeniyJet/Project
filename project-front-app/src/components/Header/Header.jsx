@@ -25,7 +25,7 @@ const Header = ({ label }) => {
 
 				<div className={s.right}>
 					<NavHeader />
-					<Button>Order Today</Button>
+					<Button >Order Today</Button>
 					<NavBurgerMenu className={s.burger} />
 				</div>
 			</div>

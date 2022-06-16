@@ -23,20 +23,24 @@ class Example extends React.Component {
 				background: '#a90000'
 			},
 			bmCrossButton: {
-				height: '24px',
-				width: '24px'
+				height: '54px',
+				width: '54px',
+				right: '15px'
 			},
 			bmCross: {
-				background: '#bdc3c7'
+				background: '#bdc3c7',
+				height: '40px',
+				width: '5px'
 			},
 			bmMenuWrap: {
 				position: 'fixed',
 				height: '100%',
-				width: '50%'
+				width: '50%',
+				top: '0'
 			},
 			bmMenu: {
-				background: '#373a47',
-				padding: '2.5em 1.5em 0',
+				background: '#405986',
+				padding: '2.5em 0 0 2.5em',
 				fontSize: '1.15em'
 			},
 			bmMorphShape: {
@@ -44,7 +48,7 @@ class Example extends React.Component {
 			},
 			bmItemList: {
 				color: '#b8b7ad',
-				padding: '0.8em'
+
 			},
 			bmItem: {
 				display: 'inline-block'

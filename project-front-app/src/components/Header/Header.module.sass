@@ -1,14 +1,18 @@
 .header
 	width: 100%
 	background-color: transparent
-	position: stiky
+	position: sticky
+	top: 0
+	background-color: #1B3764
+	z-index: 99
 
 .wrap
+	max-width: 1440px
 	width: 100%
+	margin: auto
 	height: 109px
 	display: flex
 	justify-content: space-between
-	padding: 0 70px
 	position: relative
 
 .left
@@ -19,11 +23,26 @@
 	max-width: 309px
 
 .right
-	max-width: 731px
+	max-width: 771px
 	display: flex
 	justify-content: space-between
 	align-items: center
-	flex-grow: 1
 
-.burger
-	display: none
+@media (max-width: 1440px)
+	.wrap
+		max-width: 80%
+
+@media (max-width: 1024px)
+	.right
+		justify-content: end
+
+@media (max-width: 640px)
+	.socialInner
+		display: none
+	.right
+		justify-content: center
+		padding-right: 20px
+
+@media (max-width: 480px)
+	.right
+		justify-content: center
