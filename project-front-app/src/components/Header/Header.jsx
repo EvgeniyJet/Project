@@ -3,6 +3,7 @@ import Button from '../UI/Button/Button';
 import s from './Header.module.sass';
 import SocialList from '../UI/SocialList/SocialList';
 import NavHeader from '../NavHeader/NavHeader';
+import NavBurgerMenu from '../UI/NavBurberMenu';
 import { socialList } from './Header.utils';
 import logo from '../../sourse/logo.png';
 
@@ -23,9 +24,9 @@ const Header = ({ label }) => {
 				</div>
 
 				<div className={s.right}>
-
 					<NavHeader />
 					<Button>Order Today</Button>
+					<NavBurgerMenu className={s.burger} />
 				</div>
 			</div>
 		</header>
