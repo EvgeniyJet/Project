@@ -1,0 +1,111 @@
+.inner
+	display: flex
+	align-items: center
+	justify-content: space-around
+	padding: 60px 0
+
+.bookAuthor
+	display: flex
+	grid-gap: 30px
+
+.bookImg img
+	width: 285px
+	transition: transform 0.5s cubic-bezier(0.12, 0.27, 0.32, 1.57)
+
+	&:hover
+		transform: scale(1.2)
+
+.bookInfo
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	grid-gap: 10px
+	padding-top: 38px
+	max-width: 315px
+
+.bookTitle
+	font-family: 'Cardo'
+	font-style: normal
+	font-weight: 400
+	font-size: 32px
+	line-height: 38px
+	letter-spacing: 0.32px
+	color: #1B3764
+
+.bookPrice
+	font-family: 'Inter'
+	font-style: normal
+	font-weight: 400
+	font-size: 21px
+	line-height: 33px
+	color: #FFCA42
+	margin-bottom: 5px
+
+.bookDesc
+	font-family: 'Inter'
+	font-style: normal
+	font-weight: 400
+	font-size: 19px
+	line-height: 28px
+	color: #969AA0
+
+.bookPrint
+	font-family: 'Cardo'
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 29px
+	color: #1B3764
+	position: relative
+	margin-left: 27px
+	text-decoration: none
+	cursor: pointer
+
+	&::before
+		content: ''
+		background: #FFCA42
+		position: absolute
+		display: block
+		width: 16px
+		height: 16px
+		top: 7px
+		left: -27px
+		border-radius: 50%
+
+	&:hover
+		text-decoration: underline
+
+@media (max-width: 1440px)
+	.book
+		display: flex
+		justify-content: flex-end
+
+@media (max-width: 1280px)
+	.inner
+		flex-wrap: wrap
+		justify-content: center
+		align-items: start
+		grid-row-gap: 30px
+
+@media (max-width: 640px)
+	.bookInfo
+		grid-gap: 10px
+		justify-content: center
+		text-align: center
+		padding-top: 0
+
+	.bookAuthor
+		flex-wrap: wrap
+		justify-content: center
+
+	.bookPrint
+		&::before
+			left: calc(50% - 91px)
+
+@media (max-width: 447px)
+	.title
+		font-size: 2.7em
+
+	.demo
+		margin-left: 0
+		margin-top: 20px

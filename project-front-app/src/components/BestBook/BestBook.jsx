@@ -5,7 +5,7 @@ import s from './BestBook.module.sass'
 const BestBook = () => {
 	return (
 
-		<div className={s.wrap}>
+		<div className={s.inner}>
 			<div className={s.info}>
 				<p className={s.welcome}>Welcome to Pages!!!</p>
 				<h1 className={s.title}>
