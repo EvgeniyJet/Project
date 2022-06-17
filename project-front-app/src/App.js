@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Section from './components/Section';
 import AboutAuthor from './components/AboutAuthor';
 import './App.sass';
+import Trust from './components/Trust';
+import GetBook from './components/GetBook';
 
 function App() {
 	return (
@@ -18,6 +20,13 @@ function App() {
 			</Section>
 			<Section bgVariant="light">
 				<AboutAuthor />
+			</Section>
+			<Section bgVariant="white">
+				<h2 className="Title">Trusted By The Best</h2>
+				<Trust/>
+			</Section>
+			<Section >
+				<GetBook/>
 			</Section>
 		</div>
 	);

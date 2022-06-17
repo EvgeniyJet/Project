@@ -1,0 +1,59 @@
+.inner
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.title
+	font-family: 'Cardo'
+	font-size: 42px
+	line-height: 50px
+	text-transform: capitalize
+	position: relative
+
+	&::after
+		content: ''
+		position: absolute
+		bottom: 10px
+		display: inline-block
+		text-align: center
+		width: 50px
+		height: 3px
+		background: #FFCA42
+		bottom: -23px
+		left: 0
+
+.desc
+	font-family: 'Inter'
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 28px
+	color: #B4C7E7
+	margin-top: 30px
+
+.info
+	display: flex
+	flex-direction: column
+	grid-gap: 30px
+	max-width: 540px
+
+.getBook
+	width: 560px
+
+@media (max-width: 1280px)
+	.inner
+		flex-wrap: wrap
+		justify-content: center
+		align-items: flex-start
+		grid-row-gap: 30px
+
+@media (max-width: 640px)
+	.info
+		grid-gap: 30px
+
+	.getBook
+		width: 80%
+
+@media (max-width: 447px)
+	.title
+		font-size: 2.7em
