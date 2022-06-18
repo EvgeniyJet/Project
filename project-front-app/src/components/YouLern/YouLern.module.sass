@@ -1,0 +1,95 @@
+.inner
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 80px 0 40px 0
+
+.author
+	// border: 10px solid #FFCA42
+	outline: 10px solid #FFCA42
+	outline-offset: -30px
+	position: relative
+	transition: outline-offset 0.5s
+	&:hover
+		outline-offset: -15px
+		img
+			top: 0px
+			left: 0px
+	img
+		position: relative
+		top: -30px
+		left: -30px
+		transition: top 0.5s, left 0.5s
+
+.aboutAuthor
+	display: flex
+	flex-direction: column
+	grid-gap: 60px
+	max-width: 609px
+
+.desc
+	font-family: 'Inter'
+	font-size: 19px
+	line-height: 34px
+	color: #969AA0
+
+.numberAuthor
+	display: flex
+	justify-content: space-between
+
+.line
+	width: 1px
+	height: 98px
+	background: #FFCA42
+
+.number
+	font-family: 'Cardo'
+	font-size: 54px
+	line-height: 77px
+
+@media (max-width: 1440px)
+	.book
+		display: flex
+		justify-content: flex-end
+
+@media (max-width: 1280px)
+	.inner
+		flex-wrap: wrap
+		justify-content: center
+		align-items: start
+		grid-row-gap: 30px
+
+@media (max-width: 640px)
+	.author
+		outline-offset: -20px
+		img
+			width: 80%
+			top: -20px
+			left: 48px
+
+	.numberAuthor
+		justify-content: space-around
+		flex-wrap: wrap
+
+	.line
+		margin: 0 20px
+@media (max-width: 592px)
+	.numberAuthor
+		grid-gap: 30px
+	.line
+		display: none
+	.infoAuthor
+		flex-wrap: wrap
+		.qr
+			width: 100%
+@media (max-width: 447px)
+	.title
+		font-size: 2.7em
+
+	.authorImg img
+		left: -10px
+
+@media (max-width: 360px)
+	.numberAuthor, .number, .numberDesc
+		justify-content: center
+		text-align: center

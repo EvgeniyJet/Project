@@ -1,0 +1,48 @@
+@import '../../../styles/variable'
+footer
+	padding: $paddingSection
+
+.wrap
+	max-width: 1440px
+	width: 100%
+	margin: auto
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+
+.inner
+	>a img
+		margin-bottom: 30px
+
+.title
+	font-family: 'Cardo'
+	font-size: 24px
+	line-height: 34px
+	letter-spacing: 0.384px
+	margin-bottom: 30px
+
+.innerContact
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-row-gap: 20px
+	justify-content: space-between
+	p
+		line-height: 27px
+		letter-spacing: 0.36px
+	a
+		color: #fff
+		text-decoration: none
+		font-size: 18px
+		line-height: 27px
+		color: #B4C7E7
+
+@media (max-width: 1440px)
+	.wrap
+		max-width: 80%
+
+@media (max-width: 1024px)
+	.wrap
+		padding: 50px 0
+
+@media (max-width: 740px)
+	.wrap
+		padding: 30px 0

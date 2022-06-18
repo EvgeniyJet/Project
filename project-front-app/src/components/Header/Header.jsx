@@ -5,19 +5,18 @@ import SocialList from '../UI/SocialList/SocialList';
 import NavHeader from '../NavHeader/NavHeader';
 import NavBurgerMenu from '../UI/NavBurberMenu';
 import { socialList } from './Header.utils';
-import logo from '../../sourse/logo.png';
+import Logo from '../UI/Logo';
+import useMediaQuery from "../../Hooks/useMediaQuery";
 
 
-const Header = ({ label }) => {
-
+const Header = () => {
+	const isDesktop = useMediaQuery('(min-width: 1024px)');
 	return (
 		<header className={s.header}>
 			<div className={s.wrap}>
 
 				<div className={s.left}>
-					<a href="" className={s.logo}>
-						<img src={logo} alt="logo" />
-					</a>
+					<Logo />
 					<div className={s.socialInner}>
 						<SocialList namelist={socialList} colorVariant="light" />
 					</div>
@@ -26,7 +25,7 @@ const Header = ({ label }) => {
 				<div className={s.right}>
 					<NavHeader />
 					<Button >Order Today</Button>
-					<NavBurgerMenu className={s.burger} />
+					{!isDesktop && <NavBurgerMenu className={s.burger} />}
 				</div>
 			</div>
 		</header>

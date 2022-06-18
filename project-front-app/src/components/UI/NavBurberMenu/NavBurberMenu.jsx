@@ -1,6 +1,7 @@
 import React from 'react'
 import { slide as Menu } from 'react-burger-menu';
 import s from './NavBurberMenu.module.sass';
+
 class Example extends React.Component {
 	showSettings(event) {
 		event.preventDefault();
@@ -14,7 +15,7 @@ class Example extends React.Component {
 				width: '36px',
 				height: '30px',
 				right: '36px',
-				top: '40px'
+				top: '40px',
 			},
 			bmBurgerBars: {
 				background: '#fff'
@@ -48,7 +49,6 @@ class Example extends React.Component {
 			},
 			bmItemList: {
 				color: '#b8b7ad',
-
 			},
 			bmItem: {
 				display: 'inline-block'
@@ -57,8 +57,9 @@ class Example extends React.Component {
 				background: 'rgba(0, 0, 0, 0.3)'
 			}
 		};
+
 		return (
-			<Menu right styles={styles} id={"sidebar"}>
+			<Menu right styles={styles} id={"sidebar"} >
 				<ul className={s.list}>
 					<li>
 						<a href="#" id={s.home} className={`${s.link} ${s.active}`}>Home</a>
