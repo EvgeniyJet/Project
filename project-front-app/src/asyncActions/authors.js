@@ -1,4 +1,4 @@
-import { addAuthorAction, deleteAuthorAction, getAllAuthorAction } from "../../store/reducer";
+import { addAuthorAction, deleteAuthorAction, getAllAuthorAction } from "../store/reducer";
 
 
 export const fetchAddAuthors = (data) => {
@@ -12,7 +12,7 @@ export const fetchAddAuthors = (data) => {
 			.then(json => { dispatch(addAuthorAction(json)) });
 	}
 }
-export const fetchGetAllAddAuthors = () => {
+export const fetchGetAllAuthors = () => {
 	return (dispatch) => {
 		fetch('http://localhost:5000/api/author/all', {
 			method: 'GET',
@@ -20,6 +20,7 @@ export const fetchGetAllAddAuthors = () => {
 		})
 			.then(resp => resp.json())
 			.then(json => { dispatch(getAllAuthorAction(json)) });
+		// .then(json => dispatch(getAllAuthorAction(json)) );
 	}
 }
 export const fetchDeleteAddAuthors = (id) => {

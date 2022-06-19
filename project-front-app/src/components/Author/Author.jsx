@@ -1,21 +1,23 @@
 import React from 'react'
 import s from './Author.module.sass'
-import Button from '../UI/Button'
+
 import { useDispatch } from 'react-redux'
-import { fetchDeleteAddAuthors } from '../asyncActions/authors'
+import { fetchDeleteAddAuthors } from '../../asyncActions/authors'
 
 
-export default function Author({ id, name, lastname }) {
+export default function Author({ id, nameBook, BookDes, price, linkBook }) {
 
 	const dispatch = useDispatch();
 	const deleteAuthor = () => dispatch(fetchDeleteAddAuthors(id));
 
+
+
 	return (
 		<div className={s.card} >
-			<p>{name}</p>
-			<p>{lastname}</p>
-			<Button label={'Удалить'} onClick={deleteAuthor} />
-			<hr />
+			<p>{nameBook}</p>
+			<p>{BookDes}</p>
+			<p>{price}</p>
+			<img src={`./sourse/${linkBook}`} alt="" />
 		</div>
 	)
 }
