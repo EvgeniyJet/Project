@@ -2,9 +2,10 @@ import React from 'react'
 import Logo from '../UI/Logo';
 import SocialList from '../UI/SocialList/SocialList';
 import { socialList } from './Footer.utils';
+import NavFooterUtility from '../NavFooterUtility';
+import NavFooterExplorer from '../NavFooterExplorer';
 
 import s from './Footer.module.sass'
-import NavFooter from '../NavFooter/NavFooter';
 
 export default function Footer() {
 	return (
@@ -17,11 +18,11 @@ export default function Footer() {
 				</div>
 				<div className={`${s.menu} ${s.explorer}`}>
 					<h3 className={s.title}>Explore</h3>
-					<NavFooter />
+					<NavFooterExplorer />
 				</div>
 				<div className={`${s.menu} ${s.utility}`}>
 					<h3 className={s.title}>Utility Pages</h3>
-					<NavFooter />
+					<NavFooterUtility />
 				</div>
 				<div className={`${s.menu} ${s.contacts}`}>
 					<h3 className={s.title}>Keep in Touch</h3>

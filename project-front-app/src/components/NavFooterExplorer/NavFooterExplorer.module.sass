@@ -1,3 +1,4 @@
+@import '../../../styles/variable'
 .item
 	color: #fff
 	list-style-type: none
@@ -6,10 +7,12 @@
 	font-size: 17px
 	line-height: 31px
 	letter-spacing: 0.18px
-	color: #B4C7E7
+	color: $description
+	margin-bottom: 10px
 
 	&::before
 		position: relative
 		content: '•••'
-		color: #FFCA42
-		margin-right: 5px
+		color: $primary
+		margin-right: 7px
+		font-size: 14px

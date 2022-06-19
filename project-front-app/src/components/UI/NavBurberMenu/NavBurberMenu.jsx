@@ -14,7 +14,7 @@ class Example extends React.Component {
 				position: 'fixed',
 				width: '36px',
 				height: '30px',
-				right: '36px',
+				right: '25px',
 				top: '40px',
 			},
 			bmBurgerBars: {

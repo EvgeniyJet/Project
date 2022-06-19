@@ -21,31 +21,38 @@
 		left: -30px
 		transition: top 0.5s, left 0.5s
 
-.aboutAuthor
+.boxes
 	display: flex
-	flex-direction: column
-	grid-gap: 60px
-	max-width: 609px
+	flex-wrap: wrap
+	grid-gap: 30px
+
+.box
+	background: #F4F8FF
+	padding: 30px 30px 10px 30px
+	max-width: 303px
+	min-height: 272px
+	transition: box-shadow 0.5s
+	&:hover
+		box-shadow: 0px 4px 9px 3px #ccc
 
 .desc
-	font-family: 'Inter'
-	font-size: 19px
+	font-family: 'Cardo'
+	font-size: 24px
 	line-height: 34px
-	color: #969AA0
-
-.numberAuthor
-	display: flex
-	justify-content: space-between
-
-.line
-	width: 1px
-	height: 98px
-	background: #FFCA42
+	color: #1B3764
 
 .number
 	font-family: 'Cardo'
-	font-size: 54px
-	line-height: 77px
+	font-size: 23px
+	line-height: 29px
+	background: #FFCA42
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 30px
 
 @media (max-width: 1440px)
 	.book
@@ -58,6 +65,10 @@
 		justify-content: center
 		align-items: start
 		grid-row-gap: 30px
+
+	.boxes
+		justify-content: center
+		align-items: center
 
 @media (max-width: 640px)
 	.author
