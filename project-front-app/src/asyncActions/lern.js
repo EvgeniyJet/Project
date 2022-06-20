@@ -1,4 +1,4 @@
-import { getAllLernAction } from "../../store/reducer";
+import { getAllLernAction } from "../store/reducer";
 
 export const fetchGetAllLern = () => {
 	return (dispatch) => {

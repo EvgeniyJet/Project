@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 
 const ArticleResourseContainer = () => {
 	const dispatch = useDispatch();
-	const article = useSelector(state => state);
+	const article = useSelector((state) => state.articles);
 
 	useEffect(() => {
 		if (!article.length) {

@@ -9,10 +9,7 @@ const lernRouter = require('./routes/lernRouter');
 const trustRouter = require('./routes/trustRouter');
 
 const sequelize = require('./db');
-// const { AuthorsBook } = require('./models/models');
-// const { Article } = require('./models/models');
-// const { Trust } = require('./models/models');
-// const { Lern } = require('./models/models');
+
 const PORT = process.env.PORT;
 const app = express();
 
@@ -23,11 +20,6 @@ app.use('/api/article', articleRouter);
 app.use('/api/lern', lernRouter);
 app.use('/api/trust', trustRouter);
 
-// app.get('/', async (req, res) => {
-// 	const authors = await AuthorsBook.findAll();
-// 	console.log(authors);
-// 	res.send(authors)
-// })
 
 const start = async () => {
 	try {

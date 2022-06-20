@@ -33,8 +33,8 @@ const Trust = sequelize.define('Trust', {
 });
 
 const Lern = sequelize.define('Lern', {
-	id: { type: INTEGER, primaryKey: true, autoIncrement: false },
-	number: { type: INTEGER, allowNull: false },
+	id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+	numbers: { type: TEXT, allowNull: false },
 	desc: { type: TEXT, allowNull: false }
 }, {
 	freezeTableName: true

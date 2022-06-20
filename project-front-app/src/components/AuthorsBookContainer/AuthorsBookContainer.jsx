@@ -7,10 +7,10 @@ import { useDispatch } from 'react-redux'
 
 const AuthorsBookContainer = () => {
 	const dispatch = useDispatch();
-	const authors = useSelector(state => state);
+	const authors = useSelector((state) => state.authors);
 
 	useEffect(() => {
-		if (!authors.length) {
+		if (!authors.id) {
 			dispatch(fetchGetAllAuthors())
 		}
 	}, []);

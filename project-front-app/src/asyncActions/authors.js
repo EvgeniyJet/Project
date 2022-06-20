@@ -7,6 +7,6 @@ export const fetchGetAllAuthors = () => {
 			headers: { "Content-Type": "application/json" },
 		})
 			.then(resp => resp.json())
-			.then(json => dispatch(getAllAuthorAction(json)));
+			.then(json => { dispatch(getAllAuthorAction(json)) });
 	}
 }

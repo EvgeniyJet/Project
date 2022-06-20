@@ -5,12 +5,12 @@ import Section from './components/Section';
 import AboutAuthor from './components/AboutAuthor';
 import './App.sass';
 import GetBook from './components/GetBook';
-import YouLern from './components/YouLern';
 import { Provider } from 'react-redux';
 import { store } from './store'
 import AuthorsBookContainer from './components/AuthorsBookContainer';
 import TrustContainer from './components/TrustContainer';
 import ArticleResourseContainer from './components/ArticleResourseContainer';
+import LernContainer from './components/LernContainer';
 
 function App() {
 	return (
@@ -41,7 +41,7 @@ function App() {
 
 				<Section bgVariant="white">
 					<h2 className="Title">What Will You Learn?</h2>
-					<YouLern />
+					<LernContainer />
 				</Section>
 
 				<Section bgVariant="light">

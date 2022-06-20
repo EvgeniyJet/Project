@@ -1,0 +1,49 @@
+.inner
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 80px 0 40px 0
+
+.boxes
+	display: flex
+	flex-wrap: wrap
+	grid-gap: 30px
+
+.author
+	outline: 10px solid #FFCA42
+	outline-offset: -30px
+	position: relative
+	transition: outline-offset 0.5s
+	&:hover
+		outline-offset: -15px
+		img
+			top: 0px
+			left: 0px
+	img
+		position: relative
+		top: -30px
+		left: -30px
+		transition: top 0.5s, left 0.5s
+
+@media (max-width: 1280px)
+	.inner
+		flex-wrap: wrap
+		justify-content: center
+		align-items: start
+		grid-row-gap: 30px
+
+	.boxes
+		justify-content: center
+		align-items: center
+
+@media (max-width: 640px)
+	.author
+		outline-offset: -20px
+		img
+			width: 80%
+			top: -20px
+			left: 48px
+
+@media (max-width: 447px)
+	.authorImg img
+		left: -10px

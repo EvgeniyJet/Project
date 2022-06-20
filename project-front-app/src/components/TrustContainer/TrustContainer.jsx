@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 
 const TrustContainer = () => {
 	const dispatch = useDispatch();
-	const trusted = useSelector(state => state);
+	const trusted = useSelector((state) => state.trusted);
 
 	useEffect(() => {
 		if (!trusted.length) {
