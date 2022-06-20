@@ -14,7 +14,7 @@ const AuthorsBook = sequelize.define('AuthorsBook', {
 });
 
 const Article = sequelize.define('Article', {
-	id: { type: INTEGER, primaryKey: true, autoIncrement: false },
+	id: { type: INTEGER, primaryKey: true, autoIncrement: true },
 	title: { type: TEXT, allowNull: false },
 	body: { type: TEXT, allowNull: false },
 	data: { type: TEXT, allowNull: false },

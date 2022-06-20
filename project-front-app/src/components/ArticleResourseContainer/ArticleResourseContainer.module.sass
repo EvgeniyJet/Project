@@ -1,15 +1,15 @@
 .inner
 	display: grid
-	grid-template-columns: repeat(auto-fill, 313px)
+	grid-template-columns: repeat(auto-fill, minmax(420px, 1fr))
 	grid-gap: 20px
 	padding: 60px 0 20px
-	justify-content: space-between
 
 @media (max-width: 1280px)
 	.inner
+		flex-wrap: wrap
 		justify-content: center
 		align-items: start
-		grid-row-gap: 40px
+		grid-row-gap: 30px
 
 @media (max-width: 447px)
 	.inner

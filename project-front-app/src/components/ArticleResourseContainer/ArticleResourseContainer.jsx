@@ -1,25 +1,25 @@
-import Trust from '../Trust'
-import s from './TrustContainer.module.sass'
+import ArticleResourse from '../ArticleResourse'
+import s from './ArticleResourseContainer.module.sass'
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux'
-import { fetchGetAllTrust } from '../../asyncActions/trusted'
+import { fetchGetAllArticles } from '../../asyncActions/articles'
 import { useDispatch } from 'react-redux'
 
-const TrustContainer = () => {
+const ArticleResourseContainer = () => {
 	const dispatch = useDispatch();
-	const trusted = useSelector(state => state);
+	const article = useSelector(state => state);
 
 	useEffect(() => {
-		if (!trusted.length) {
-			dispatch(fetchGetAllTrust())
+		if (!article.length) {
+			dispatch(fetchGetAllArticles())
 		}
 	});
 
 	return (
 		<div className={s.inner} >
-			{trusted.map(company => <Trust key={company.id} {...company} />)}
+			{article.map(art => <ArticleResourse key={art.id} {...art} />)}
 		</div>
 	);
 }
 
-export default TrustContainer;
+export default ArticleResourseContainer;

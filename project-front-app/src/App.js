@@ -6,11 +6,11 @@ import AboutAuthor from './components/AboutAuthor';
 import './App.sass';
 import GetBook from './components/GetBook';
 import YouLern from './components/YouLern';
-import ArticleResourse from './components/ArticleResourse';
 import { Provider } from 'react-redux';
 import { store } from './store'
 import AuthorsBookContainer from './components/AuthorsBookContainer';
 import TrustContainer from './components/TrustContainer';
+import ArticleResourseContainer from './components/ArticleResourseContainer';
 
 function App() {
 	return (
@@ -46,7 +46,7 @@ function App() {
 
 				<Section bgVariant="light">
 					<h2 className="Title">Articles & Resources</h2>
-					<ArticleResourse />
+					<ArticleResourseContainer />
 				</Section>
 
 				<Footer />
