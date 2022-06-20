@@ -1,4 +1,4 @@
-import { getAllTrustAction } from "../../store/reducer";
+import { getAllTrustAction } from "../store/reducer";
 
 export const fetchGetAllTrust = () => {
 	return (dispatch) => {

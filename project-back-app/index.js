@@ -9,10 +9,10 @@ const lernRouter = require('./routes/lernRouter');
 const trustRouter = require('./routes/trustRouter');
 
 const sequelize = require('./db');
-const { AuthorsBook } = require('./models/models');
-const { Article } = require('./models/models');
-const { Trust } = require('./models/models');
-const { Lern } = require('./models/models');
+// const { AuthorsBook } = require('./models/models');
+// const { Article } = require('./models/models');
+// const { Trust } = require('./models/models');
+// const { Lern } = require('./models/models');
 const PORT = process.env.PORT;
 const app = express();
 

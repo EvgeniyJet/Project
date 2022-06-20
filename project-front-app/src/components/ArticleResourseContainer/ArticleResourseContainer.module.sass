@@ -1,0 +1,16 @@
+.inner
+	display: grid
+	grid-template-columns: repeat(auto-fill, 313px)
+	grid-gap: 20px
+	padding: 60px 0 20px
+	justify-content: space-between
+
+@media (max-width: 1280px)
+	.inner
+		justify-content: center
+		align-items: start
+		grid-row-gap: 40px
+
+@media (max-width: 447px)
+	.inner
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))

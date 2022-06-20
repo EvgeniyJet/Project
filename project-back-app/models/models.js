@@ -1,7 +1,7 @@
 const sequelize = require('../db');
 const { DataTypes } = require('sequelize');
 
-const { INTEGER, STRING, TEXT } = DataTypes;
+const { INTEGER, TEXT } = DataTypes;
 
 const AuthorsBook = sequelize.define('AuthorsBook', {
 	linkBook: { type: TEXT, allowNull: false },
@@ -14,28 +14,28 @@ const AuthorsBook = sequelize.define('AuthorsBook', {
 });
 
 const Article = sequelize.define('Article', {
-	id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-	title: { type: STRING, allowNull: false },
-	body: { type: STRING, allowNull: false },
-	data: { type: STRING, allowNull: false },
-	linkIMG: { type: STRING, allowNull: false }
+	id: { type: INTEGER, primaryKey: true, autoIncrement: false },
+	title: { type: TEXT, allowNull: false },
+	body: { type: TEXT, allowNull: false },
+	data: { type: TEXT, allowNull: false },
+	linkIMG: { type: TEXT, allowNull: false }
 }, {
 	freezeTableName: true
 });
 
 const Trust = sequelize.define('Trust', {
-	id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-	linkLogo: { type: STRING, allowNull: false },
-	nameComp: { type: STRING, allowNull: false },
-	descComp: { type: STRING, allowNull: false }
+	id: { type: INTEGER, primaryKey: true, autoIncrement: false },
+	linkLogo: { type: TEXT, allowNull: false },
+	nameComp: { type: TEXT, allowNull: false },
+	descComp: { type: TEXT, allowNull: false }
 }, {
 	freezeTableName: true
 });
 
 const Lern = sequelize.define('Lern', {
-	id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+	id: { type: INTEGER, primaryKey: true, autoIncrement: false },
 	number: { type: INTEGER, allowNull: false },
-	desc: { type: STRING, allowNull: false }
+	desc: { type: TEXT, allowNull: false }
 }, {
 	freezeTableName: true
 });
